@@ -1,0 +1,9 @@
+.container{
+	float: left;
+	width: 50%;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+}

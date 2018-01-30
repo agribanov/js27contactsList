@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="container" data-name="Hello">
+	<table>
+		<thead>
+			<tr>
+				<th>Имя</th>
+				<th>Фамилия</th>
+				<th></th>
+			</tr>
+		</thead>
+	</table>
+</div>
+<div class="container">
+	<form id="contactForm">
+		<label for="name">Name</label>
+		<input name="name" id="name" class="form-input" placeholder="Name" />
+		<br />
+		<label for="surname">Surname</label>
+		<input name="surname" id="surname" class="form-input" placeholder="Surname" />
+		<br />
+		<input type="submit" id="submit" disabled="disabled" value="Save">
+	</form>
+</div>
+
+<script type="text/appTemplate" id="contactTemplate">
+	<tr data-id="{{id}}">
+		<td>{{name}}</td>
+		<td>{{surname}}</td>
+		<td><button class="delete-btn">Delete</button></td>
+	</tr>
+</script>
+
+</body>
+</html>
