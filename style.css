@@ -7,3 +7,15 @@ label {
 	display: block;
 	font-weight: bold;
 }
+
+form{
+	background-color: yellow;
+	height: 300px;
+	overflow: hidden;
+	transition: height 2s ease-in, background-color 2s
+}
+
+form.collapsed{
+	height: 0px;
+	background-color: red;
+}
